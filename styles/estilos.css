@@ -1,0 +1,665 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    --second-color: #F2C66D;
+}
+
+
+body {
+    font-family: 'Cormorant Garamound';
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #093931;  
+    height: 821px;
+
+}
+
+.header-txt {
+color: #F5D38E;
+}
+
+.header-txt {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 80px;
+    
+}
+
+.header-txt {
+   position: absolute;
+   top: 30%;
+   left: 132px;
+   transform: translate(-50, -50);
+} 
+
+.btn-1 {
+    border-radius: 1.625rem;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    padding: 0.75rem 2.1875rem;
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    align-self: flex-start;
+    font-weight: 200;
+    width: 82px;
+    height: 28px;
+}
+
+.header .header-img2 {
+    height: auto;
+    position: absolute;
+    top: 125px;
+    left: 49.5%;
+    z-index: 1;
+
+}
+
+.header-img3 {
+    height: auto;
+    position: absolute;
+    top: 230px;
+    left: 71%;
+    z-index: 1;
+}
+
+.header-img4 {
+    width: 52px;
+    height: auto;
+    position: absolute;
+    top: 370px;
+    left: 79.2%;
+    z-index: 1;
+    display: flex;
+}
+.menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-transform: uppercase;
+   
+}
+
+.logo {
+    font-size: 30px;
+    color: #F5D38E;
+    text-transform: capitalize;
+    font-weight: 400;
+
+}
+
+.logo {
+    position: absolute;
+    width: 95px;
+    height: 46px;
+    top: 8px;
+    left: 132px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    align-items: flex-start;
+    padding: 0.5rem 0;
+    width: 40rem;
+    
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    padding: 0.65625rem 0.9000rem;
+    
+}
+
+.navbar a {
+    font-family: var(--font-body);
+    color: #FFF;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.navbar a:hover {
+    color: #F2C66D;
+}
+
+.navbar .active:hover {
+    border-bottom: 4px solid var(--second-color);
+    border-radius: 0.13rem;
+    /* box-shadow: 2px 11px 0px -6px rgba(242, 198, 109, 1); */
+}
+
+.navbar .active1:hover {
+    border-bottom: 4px solid var(--second-color);
+    border-radius: 0.13rem;
+}
+
+.navbar .active2:hover {
+    border-bottom: 4px solid var(--second-color);
+    border-radius: 0.13rem;
+}
+.navbar .active3:hover {
+    border-bottom: 4px solid var(--second-color);
+    border-radius: 0.13rem;
+   
+
+}
+
+.navbar .active4:hover {
+    border-bottom: 4px solid var(--second-color);
+    border-radius: 0.13rem;
+}
+
+
+#menu {
+    cursor: pointer;
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu img {
+  cursor: pointer;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    color: fuchsia;
+}
+
+.info-container {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 120px;
+    margin-top: 20px;
+}
+
+.info-container {
+    width: auto;
+    height: 232px;
+
+}
+
+.info-txt {
+    margin-top: 20px;
+}
+
+.info-txt h4 {
+    font-weight: 400;
+}
+
+.feature-prod {
+    height: 506px;
+    margin-left: 80px;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.feature-txt {
+    color: #0D554A;
+    margin-right: 40px;
+    margin-top: -80px;
+    font-size: 20px;
+}
+
+.feature-txt1 {
+    color: #9095A0;
+}
+
+.feature-txt1 h4 {
+    font-weight: 400;
+}
+
+.feature-btn {
+    margin-top: 40px;
+}
+
+
+.feature-btn a {
+    border-radius: 2.625rem;
+    border: 1px solid #0D554A;
+    color: #0D554A;
+    padding: 0.75rem 3.1875rem;
+    font-size: 1.1rem; 
+}
+
+.feature-img {
+    padding-left: 20px;
+}
+
+.feature-img img {
+    border-radius: 8px;
+   margin-right: 20px;
+}
+
+.products-txt1 h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    color: #0D554A;
+}
+
+.collection-container {
+    height: 1082px;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.box-container img {
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.products-txt {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    margin-top: -90px;
+    font-size: 28px;
+    color: #FFFFFF;
+    
+}
+
+.products-txt h3 {
+    font-weight: 100;
+}
+
+.container-img .imagen1 {
+    margin-top: 60px;
+}
+
+.container-img .imagen3 {
+    margin-top: 60px;
+}
+
+.box-container2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.box-container2 img {
+    margin: 20px;
+    border-radius: 8px;
+}
+
+
+.products-txt2 {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    margin-top: -90px;
+    font-size: 28px;
+    color: #FFFFFF;
+    
+}
+
+.products-txt2 h3 {
+    font-weight: 100;
+}
+
+.container-img .imagen5 {
+    margin-top: -20px;
+}
+
+.butons2 {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.butons2 a {
+    border-radius: 2.625rem;
+    border: 1px solid #0D554A;
+    color: #0D554A;
+    padding: 0.75rem 4.1875rem;
+    font-size: 1.1rem; 
+}
+
+.jewerly-container {
+   height: 554px;
+   background-color: #FAFAFB;
+   ;
+}
+
+.jewerly {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.jewerly-txt {
+    margin-left: 80px;
+
+}
+
+.jewerly-txt {
+    color: #0D554A;
+    margin-right: 60px;
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.jewerly-txt1 {
+    color: #9095A0;
+}
+
+.jewerly-txt1 h4 {
+    font-weight: 400;
+}
+
+.jewerly-btn {
+    margin-top: 40px;
+}
+
+.jewerly-btn a {
+    border-radius: 2.625rem;
+    border: 1px solid #0D554A;
+    color: #0D554A;
+    padding: 0.75rem 3.1875rem;
+    font-size: 1.1rem; 
+}
+
+.jewerly-img {
+    padding-left: 20px;
+}
+
+.jewerly-img img {
+    border-radius: 8px;
+   margin-right: 20px;
+}
+
+.our-story {
+    height: 570px;
+    background-color: #FAFAFB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-container {
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.our-txt {
+    font-size: 25px;
+    padding: 20px;
+    color: #0D554A;
+}
+
+.btn-play img {
+    background-color: #FFFFFF;
+    display: flex;
+    width: 52px;
+    height: 52px;
+    padding: 0.65625rem;
+    border-radius: 100px;
+}
+
+.btn-play {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    margin-top: 158px;
+    left: 715px;
+}
+
+.footer1 {
+    height: 522px;
+    background-color: #093931;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-txt {
+    color: #FFFFFF;
+    font-size: 1.8rem;
+    margin-left: 8.5rem;
+    margin-top: -5rem;
+}
+
+.footer-txt1 h4 {
+    color: #FFFFFF;
+    font-size: 1rem;
+    margin-left: 8.5rem;
+    font-weight: 100;
+    margin-top: 25px;
+}
+
+.footer1-img {
+    margin-right: 140px;
+    width: 696px;
+    height: 375px;
+    background-color: #171A1F4D;
+    border-radius: 8px;
+}
+
+
+.footer1 .txt-img {
+    position: absolute;
+    z-index: 1;
+    color: #FFF;
+    font-weight: 100;
+    font-size: 16px;
+    margin-top: -60px;
+    margin-left: 460px;
+    margin-top: -120px;
+    font-size: 1rem;
+    line-height: 1.625rem;
+}
+
+.footer1 .txt-img2 {
+    position: absolute;
+    color: #FFF;
+    font-weight: 100;
+    font-size: 16px;
+    margin-top: -60px;
+    margin-left: 460px;
+    margin-top: 80px;
+}
+
+.buton-left {
+    position: absolute;
+    margin-left: 250px;
+    margin-top: 349px;
+}
+
+.buton-right {
+    position: absolute;
+    margin-left: 320px;
+    margin-top: 349px;
+}
+
+.footer {
+    margin-top: 1px;
+    background-color: #093931;
+    height: 234px;
+}
+
+.icono-footer {
+    font-size: 30px;
+    color: #F5D38E;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-footer a {
+    display: flex;
+   margin-left: -51.5rem;
+   margin-top: -50px;
+}
+
+.link1 {
+    position: absolute;
+    line-height: 30px;
+    left: 450px;
+    margin-top: -20px;
+}
+
+.link1 a {
+    color: #FFF;
+}
+
+.link2 {
+    position: absolute;
+    line-height: 30px;
+    left: 650px;
+    margin-top: -20px;
+}
+
+.link2 a {
+    color: #FFF;
+}
+
+.link3 {
+    position: absolute;
+    left: 60rem;
+    margin-top: -60px;
+}
+
+.link3 li {
+    color: #FFF;
+}
+
+.icones {
+    position: absolute;
+    left: 82%;
+    margin-top: 140px;
+}
+
+.icones img {
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.fecha {
+    position: absolute;
+    left: 9%;
+    margin-top: 160px;
+    color: #FFF;
+    font-size: 15px;
+}
+
+.email-bar {
+    display: flex;
+    margin-bottom: 20px;
+    margin-right: -810px;
+    margin-top: 60px;
+}
+
+.email-bar input {
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    width: 250px;
+}
+
+.email-bar button {
+    width: 114px;
+    height: 36px;
+    padding: 7px 23.5px 7px 24.5px;
+    border-radius: 0px 18px 18px 0px;
+    color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+
+
+.email-bar button:hover {
+    background-color: #0056b3;
+}
+
+.email-bar {
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 18px;
+}
+
+.email-bar input {
+    width: 269px;
+    height: 35px; 
+    padding: 7px 132px 6px 12px;
+    border-radius: 18px 0px 0px 18px;
+    border: 1px solid #FFFFFF;
+    outline: none;
+}
+
+.email-bar button {
+    padding: 10px; 
+    border: none;
+    border-radius: px; 
+    background-color: #F2C66D;
+    color: #fff;
+    cursor: pointer;
+}
+
+.mail-img {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    margin-left: 12px;
+    margin-top: 9px;
+}

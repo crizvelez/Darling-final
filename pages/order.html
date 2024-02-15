@@ -19,28 +19,22 @@
             <div>                
                 <nav class="navbar">
                  <ul>
-                    <li class="active"><a href="#">Home</a></li>
-                    <li class="active1"><a href="#">Shop</a></li>
+                    <li class="active"><a href="../index.html">Home</a></li>
+                    <li class="active1"><a href="./ourprod.html">Shop</a></li>
                     <li class="active2"><a href="#">Collection</a></li>
                     <li class="active3"><a href="#">About</a></li>
                     <li class="active4"><a href="#">Contact</a></li>
                     <li><img src="../assets/Profile 1.png" alt=""></li>
                     <li class="submenu">
                      <img id="img-carrito" src="../assets/Shopping cart 1.png" alt="car">
-                        <div id="carrito">
-                            <table id="lista-carrito">
-                                <thead>
-                                    <tr>
-                                        <th>Imagen</th>
-                                        <th>Nombre</th>
-                                        <th>Precio</th>
-                                    </tr>
-                                </thead>
-                                <tbody></tbody>
-                            </table>
-                           <a href="#" id="vaciar-carrito">vaciar carrito</a>
-                        </div>
                     </li>
+                    <div class="modalCart-hidden hidden" style="display: none;">
+                        <section>
+                          <button id="closeModal">&times;</button>
+                          <span>Your cart</span>
+                          <div><button  class="button-car"><a href="./order.html">Continue to check out</a></button></div>
+                        </section>
+                      </div>
                  </ul>
                  <div>
                 </section>
@@ -104,50 +98,64 @@
                         </div>
                        </section>
                     <section class="sona-pago">
-                     <p class="pago-logo">Payment method</p>
-                     <p class="pago-logo1">Change payment methods</p>
-                     <h3 class="clave-master">**** 5987</h3>
-
-                     <div>
-                        <input class="tarjeta-bard" type="email" placeholder="          Mastercard">
-                        </div>
-                        <div><h3 class="Voucher">Voucher</h3></div>
+                     <p class="pago-logo">customer information</p>
+                     <p class="full-name">Full name</p>
+                     <form action="/procesar_formulario" method="post">
+                        <!-- Campo de entrada de texto -->
+                        <label for="nombre"></label>
+                        <input type="text" id="nombre" name="" required>
+                        <p class="phone">Phone</p>
+                        <form action="/procesar_formulario" method="post">
+                            <!-- Campo de entrada de texto -->
+                            <label for="nombre"></label>
+                            <input type="number" id="numero" name="" class="phone-num" required>
+                            <p class="adress">Address</p>
+                            <form action="/procesar_formulario" method="post">
+                                <!-- Campo de entrada de texto -->
+                                <label for="calle" class="etiqueta"></label>
+                                <input type="text" id="calle" name="calle" class="Address" required>
+                                <p class="correo">Email</p>
+                                <form action="/procesar_formulario" method="post">
+                                    <div class="contenedor-formulario">
+                                      <label for="correo" class="etiqueta"></label>
+                                      <input type="email" id="correo" name="correo" class="Corre-o" required>
+                                    </div>
+                                  </form>
+                                  <p class="n-card">Name on the card</p>
+                                  <form action="/procesar_formulario" method="post">
+                                    <div class="contenedor-formulario">
+                                      <label for="nombre-tarjeta" class="etiqueta"></label>
+                                      <input type="text" id="nombre-tarjeta" name="nombre-tarjeta" class="No-card" required>
+                                    </div>
+                                  </form>
+                                  <p class="nU-card">Numero de la tajeta</p>
+                                  <form action="/procesar_formulario" method="post">
+                                    <div class="contenedor-formulario">
+                                      <label for="numero-tarjeta" class="etiqueta"></label>
+                                      <input type="number" id="numero-tarjeta" name="numero-tarjeta" class="Nu-card" required>
+                                    </div>
+                                </form>
+                    
                     <div><img class="master-icon" src="../assets/master23.png" alt=""></div>
-                    <div> <input class="interes-2" type="email" placeholder="$15 OFF"></div>
-                    <div><button class="aplay">Apply</button></div>
-                    <div><h3 class="marquilla">$15 Off</h3></div>
-
                     <div>
-                        <div><p class="sumy">Summary</p></div>
-                        <div><p class="subto">Subtotal</p></div>
-                        <div><p class="subto1">Discount</p></div>
-                        <div><p class="subto2">Fee</p></div>
+                        <div><p class="Subto">Subtotal</p></div>
                     </div>
 
                     <div>
-                        <div><p class="total1">$1073.72</p></div>
-                        <div><p class="total2">-$15</p></div>
-                        <div><p class="total3">$0</p></div>
+                        <div><p class="total3">0</p></div>
                         </div>
 
-                        <div><div class="linea"></div></div>
+                        <div class="total-container">
+                        <div class="linea"></div></div>
                         <div><p class="final">Total</p></div>
-                        <div><p class="final-2">$1058.72</p></div>
-                        <div><button  class="final-button">Proceed to payment</button></div>
+                        <div><p class="final-2">0</p></div>
+                        <div><button  class="final-button"><a href="./contishop.html">Proceed to payment</a></button></div>
                       </div>
 
-                   
                       </section>
                       
-                      
-                    </section>
-                </section>
-                    
-                    </section>
-
-                </section>
-                
-                  <section>
+                   
+                     
                     <footer class="footer">
                         <div class="footer-container">
                             <div class="logo-footer">
@@ -190,6 +198,7 @@
                         
                       
                     </footer> 
+                    <script src="../scripts/carmodal.js"></script>
     
 </body>
 </html>

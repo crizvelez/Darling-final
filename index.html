@@ -21,27 +21,21 @@
                 <nav class="navbar">
                     <ul>
                         <li class="active"><a href="#">Home</a></li>
-                        <li class="active1"><a href="#">Shop</a></li>
+                        <li class="active1"><a href="./pages/ourprod.html">Shop</a></li>
                         <li class="active2"><a href="#">Collection</a></li>
                         <li class="active3"><a href="#">About</a></li>
                         <li class="active4"><a href="#">Contact</a></li>
                         <li><img src="./assets/Profile 1.png" alt=""></li>
                         <li class="submenu">
                             <img id="img-carrito" src="./assets/Shopping cart 1.png" alt="car">
-                            <div id="carrito">
-                                <table id="lista-carrito">
-                                    <thead>
-                                        <tr>
-                                            <th>Imagen</th>
-                                            <th>Nombre</th>
-                                            <th>Precio</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody></tbody>
-                                </table>
-                                <a href="#" id="vaciar-carrito">vaciar carrito</a>
-                            </div>
                         </li>
+                        <div class="modalCart-hidden hidden" style="display: none;">
+                            <section>
+                                <button id="closeModal">&times;</button>
+                                <span>Your cart</span>
+                                <div><button  class="button-car"><a href="./order.html">Continue to check out</a></button></div>
+                            </section>
+                        </div>
                     </ul>
                 </nav>
 
@@ -341,6 +335,7 @@
             </div>
         </div>
     </footer>
+
     <script src="./scripts/carmodal.js"></script>
     <script src="script.js"></script>
 </body>

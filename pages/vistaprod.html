@@ -23,28 +23,22 @@
       <div>
       <nav class="navbar">
         <ul>
-           <li class="active"><a href="#">Home</a></li>
-           <li class="active1"><a href="#">Shop</a></li>
+           <li class="active"><a href="../index.html">Home</a></li>
+           <li class="active1"><a href="../pages/ourprod.html">Shop</a></li>
            <li class="active2"><a href="#">Collection</a></li>
            <li class="active3"><a href="#">About</a></li>
            <li class="active4"><a href="#">Contact</a></li>
            <li><img src="../assets/Profile 1.png" alt=""></li>
            <li class="submenu">
             <img id="img-carrito" src="../assets/Shopping cart 1.png" alt="car">
-               <div id="carrito">
-                   <table id="lista-carrito">
-                       <thead>
-                           <tr>
-                               <th>Imagen</th>
-                               <th>Nombre</th>
-                               <th>Precio</th>
-                           </tr>
-                       </thead>
-                       <tbody></tbody>
-                   </table>
-                  <a href="#" id="vaciar-carrito">vaciar carrito</a>
-               </div>
            </li>
+           <div class="modalCart-hidden hidden" style="display: none;">
+            <section>
+              <button id="closeModal">&times;</button>
+              <span>Your cart</span>
+              <div><button  class="button-car"><a href="./order.html">Continue to check out</a></button></div>
+            </section>
+          </div>
         </ul>
        </nav>
       </div>
@@ -150,15 +144,15 @@
         <h3>Quantity</h3>
       </div>
       <div>
-        <div>
-          <h3>-</h3>
+        <div class="cantidad-prod">
+            <button id="aumentar">&ndash;</button>
+            <input type="number" id="cantidad" min="1" max="12" value="1">
+            <button id="disminuir">+</button>
         </div>
-        <div>
-          <h3>1</h3>
-        </div>
-        <div>
-          <h3>+</h3>
-        </div>
+        <div class="butons-vista">
+        <div class="add-cart"><button  class="add-car"><a href="./contishop.html">Add to bag</a></button></div>
+        <div class="buy-nou"><button  class="buy-now"><a href="./ourprod.html">Buy now</a></button></div>
+      </div>
       </div>
     </section>
 
@@ -328,5 +322,6 @@
         </div>
     </div>
     </footer>
+    <script src="../scripts/carmodal.js"></script>
   </body>
 </html>

@@ -117,23 +117,94 @@
     display: none;
 }
 
-.submenu #carrito {
-    display: none;
+
+.submenu img {
+    cursor: pointer;
+  }
+
+  .button-car{
+    position: relative;
+    left: -18%;
+    width: 300px;
+    height: 44px;
+    color: #FFF;
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+border-radius: 22px;
+background: #0D554A;
 }
 
-.submenu:hover #carrito {
-    display: block;
-    position: absolute;
-    right: 0;
-    backdrop-filter: blur(10px);
-    top: 100%;
-    z-index: 1;
-    background-color: aquamarine;
-    padding: 20px;
-    min-height: 400px;
+.button-car{
+    
+    position: relative;
+    margin-top: 170%;
 }
+  
+#closeModal {
+    background-color: transparent;
+    display: flex;
+    position: absolute;
+    box-shadow: none;
+    border: none;
+  outline: none;
+  background: none;
+}
+
+  .modalCart-hidden section {
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    text-align: cen;
+    background-color: rgb(250, 248, 248);
+    top: 0;
+    color: #0D554A;
+    right: 0;
+    height: 100%;
+    width: 440px;
+    box-shadow: none;
+   
+  }
+
+  .modalCart-hidden span {
+    position: absolute;
+    display: flex;
+    left: 7%;
+    top: 28px;
+    width: 146px;
+    height: 56px;
+    font-family: 'Cormorant Garamound';
+    font-weight: 600;
+    font-size: 32px;
+    text-transform: capitalize;
+  }
+
+  .modalCart-hidden button  {
+    font-size: 40px;
+    right: 30px;
+    top: 30px;
+  }
+
+  .modalCart-hidden {
+    top: 0;
+    left: 0;
+    background-color: #0f0f0fa9;
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+  
+button {
+    cursor: pointer;
+  } 
 
 /*----contenedor shop----*/
+
 
 /*-----description contenedor-----*/
 
@@ -657,10 +728,96 @@
 
  .Quantity-product {
     position: relative;
-    z-index: 1;
+    ;
     left: -1700px;
     top: 340px;
     font-family: "Manrope";
     color: #424955;
    
+ }
+
+ .cantidad-prod{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 58%;
+    top: 560px;
+ }
+
+ #aumentar{
+    
+    width: 39px;
+    height: 44px;
+ }
+
+ #cantidad{
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    align-items: center;
+    text-align: center;
+    width: 39px;
+    height: 44px;
+ }
+
+ #disminuir{
+    margin-left: 20px;
+    width: 39px;
+    height: 44px;
+    
+ }
+ input[type="number"]::-webkit-inner-spin-button,
+ input[type="number"]::-webkit-outer-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+ }
+
+ .butons-vista{
+    display: flex;
+    position: absolute;
+    left: 57.5%;
+    top: 520px;
+ }
+
+ .butons-vista a {
+    color: #FFFFFF;
+ }
+
+ .add-car{
+    position: relative;
+    top: 100px;
+    left: 3px;
+    width: 266px;
+    height: 52px;
+    color: #FFF;
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+border-radius: 22px;
+background: transparent;
+
+    
+ }
+
+ .buy-now{
+    position: relative;
+    top: 100px;
+    left: 3px;
+    width: 266px;
+    height: 52px;
+    color: #FFF;
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+border-radius: 22px;
+background: #0D554A;
+margin-left: 20px;
+ }
+
+ .add-car a{
+    color: #093931;
  }

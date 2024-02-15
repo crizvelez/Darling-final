@@ -11,6 +11,9 @@
     ---true-color: #000;
 }
 
+
+
+
 .menu-container {
     display: flex;
     align-items: center;
@@ -26,6 +29,7 @@
 }
 
 .logo {
+    font-family: 'Cormorant Garamound';
     font-size: 30px;
     color: #F5D38E;
     text-transform: capitalize;
@@ -42,6 +46,7 @@
 
 
 .navbar {
+    font-family: 'Cormorant Garamound';
     display: flex;
     justify-content: space-between;
     background-color: var(--primary-color);
@@ -120,17 +125,92 @@
     display: none;
 }
 
-.submenu:hover #carrito {
-    display: block;
-    position: absolute;
-    right: 0;
-    backdrop-filter: blur(10px);
-    top: 100%;
-    z-index: 1;
-    background-color: aquamarine;
-    padding: 20px;
-    min-height: 400px;
+.button-car{
+  position: relative;
+  left: -18%;
+  width: 300px;
+  height: 44px;
+  color: #FFF;
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+border-radius: 22px;
+background: #0D554A;
 }
+
+.button-car{
+  
+  position: relative;
+  margin-top: 170%;
+}
+
+.submenu img {
+    cursor: pointer;
+  }
+  
+#closeModal {
+    background-color: transparent;
+    display: flex;
+    position: absolute;
+    box-shadow: none;
+    border: none;
+  outline: none;
+  background: none;
+}
+
+  .modalCart-hidden section {
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    text-align: cen;
+    background-color: rgb(250, 248, 248);
+    top: 0;
+    color: #0D554A;
+    right: 0;
+    height: 100%;
+    width: 440px;
+    box-shadow: none;
+   
+  }
+
+  .modalCart-hidden span {
+    position: absolute;
+    display: flex;
+    left: 7%;
+    top: 28px;
+    width: 146px;
+    height: 56px;
+    font-family: 'Cormorant Garamound';
+    font-weight: 600;
+    font-size: 32px;
+    text-transform: capitalize;
+  }
+
+  .modalCart-hidden button  {
+    font-size: 40px;
+    right: 30px;
+    top: 30px;
+  }
+
+  .modalCart-hidden {
+    top: 0;
+    left: 0;
+    background-color: #0f0f0fa9;
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+  
+button {
+    cursor: pointer;
+  } 
+
+
 
     .titulo {
         height: 82px;
@@ -193,7 +273,7 @@
     margin: 0;
     padding: 0;
     margin-top: 70px; 
-    margin-left: 20%;
+    margin-left: 5.8%;
 }
 
 .search-menu a {
@@ -204,6 +284,8 @@
     background-color: #f0f0f0;
     color: #000;
     margin-right: 10px; }
+
+   
 
 .search-menu a:hover {
     background-color: #007bff;
@@ -274,12 +356,14 @@
     background-color: #ddd;
 }
 
+
 .desplegable {
-    position: absolute;
+    display: flex;
+    position: relative;
     width: 138px;
     height: 36px;
     top: 522px;
-    left: 1170px;
+    margin-left: -22.5%;
     border-radius: 4px 4px 0 0;
     overflow: hidden;
     background-color: #fff;
@@ -391,6 +475,7 @@
 /*------------------------*/
 
 .footer {
+    font-family: 'Cormorant Garamound';
     margin-top: 1px;
     background-color: #093931;
     height: 234px;
@@ -424,6 +509,7 @@
 }
 
 .link1 {
+    font-family: 'manrope';
     position: absolute;
     line-height: 30px;
     left: 450px;
@@ -435,6 +521,7 @@
 }
 
 .link2 {
+    font-family: 'manrope';
     position: absolute;
     line-height: 30px;
     left: 650px;
@@ -446,8 +533,9 @@
 }
 
 .link3 {
+    
     position: absolute;
-    left: 60rem;
+    left: 67%;
     margin-top: -60px;
 }
 
@@ -583,26 +671,34 @@
 
   .producto1{
     Width: 734px;
-    width:600px ;
+    width:756px ;
     margin-top: 42px;
     position:relative ;
-    margin-left: 360px;
+    margin-left: 4.8%;
     border-radius: 8px 8px 0px 0;
   }
   .producto1 img{
     margin: 10px;
     display: flex;
-    height: auto;
+    
     margin-bottom: 20px;
     border-radius: 8px 8px 0px 0;
-    Height: auto;
-    width:576px ;
+    Height: 734px;
+    width:568px ;
+  }
+
+  .nombre-producto {
+    margin-left: 3.5%;
+  }
+
+  .producto1 .precio {
+    margin-left: 3.5%;
   }
 
   .producto2{
    margin-top: -810px;
     position:relative ;
-    margin-left: 955px;
+    margin-left: 50%;
     border-radius: 8px 8px 0px 0;
     display: flex;
  }
@@ -629,7 +725,7 @@ margin-left: 30px;
   .producto3{
     margin-top: 20px;
      position:relative ;
-     margin-left: 955px;
+     margin-left: 50%;
      border-radius: 8px 8px 0px 0;
      display: flex;
   }
@@ -784,3 +880,4 @@ margin-left: 30px;
 }
 
 /*----------------------------*/
+

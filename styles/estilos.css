@@ -20,33 +20,32 @@ img {
 }
 
 .container {
-    
     margin: 0 auto;
 }
 
 .header {
-    background-color: #093931;  
+    background-color: #093931;
     height: 821px;
 
 }
 
 .header-txt {
-color: #F5D38E;
+    color: #F5D38E;
 }
 
 .header-txt {
     font-weight: 400;
     font-size: 50px;
     line-height: 80px;
-    
+
 }
 
 .header-txt {
-   position: absolute;
-   top: 30%;
-   left: 132px;
-   transform: translate(-50, -50);
-} 
+    position: absolute;
+    top: 30%;
+    left: 132px;
+    transform: translate(-50, -50);
+}
 
 .btn-1 {
     border-radius: 1.625rem;
@@ -66,8 +65,6 @@ color: #F5D38E;
     position: absolute;
     top: 125px;
     left: 49.5%;
-    z-index: 1;
-
 }
 
 .header-img3 {
@@ -75,7 +72,6 @@ color: #F5D38E;
     position: absolute;
     top: 230px;
     left: 71%;
-    z-index: 1;
 }
 
 .header-img4 {
@@ -84,15 +80,14 @@ color: #F5D38E;
     position: absolute;
     top: 370px;
     left: 79.2%;
-    z-index: 1;
     display: flex;
 }
+
 .menu-container {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     text-transform: uppercase;
-   
 }
 
 .logo {
@@ -119,7 +114,6 @@ color: #F5D38E;
     align-items: flex-start;
     padding: 0.5rem 0;
     width: 40rem;
-    
 }
 
 .navbar ul {
@@ -129,7 +123,6 @@ color: #F5D38E;
 
 .navbar li {
     padding: 0.65625rem 0.9000rem;
-    
 }
 
 .navbar a {
@@ -159,10 +152,11 @@ color: #F5D38E;
     border-bottom: 4px solid var(--second-color);
     border-radius: 0.13rem;
 }
+
 .navbar .active3:hover {
     border-bottom: 4px solid var(--second-color);
     border-radius: 0.13rem;
-   
+
 
 }
 
@@ -183,38 +177,113 @@ color: #F5D38E;
     display: none;
 }
 
-.submenu #carrito {
-    display: none;
+.button-car{
+    position: relative;
+    left: -18%;
+    width: 300px;
+    height: 44px;
+    color: #FFF;
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+border-radius: 22px;
+background: #0D554A;
+}
+
+.button-car{
+    
+    position: relative;
+    margin-top: 170%;
+}
+
+
+.submenu img {
+    cursor: pointer;
+    z-index: 1;
 }
 
 .submenu img {
-  cursor: pointer;
+    cursor: pointer;
 }
-.modalCart{
+
+#closeModal {
+    background-color: transparent;
+    display: flex;
+    position: absolute;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.modalCart-hidden {
+    display: none;
+}
+
+/* .hidden{
+    display: none;
+} */
+
+.modalCart-hidden section {
     display: flex;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #171A1F66;
-    z-index: 1;
     justify-content: flex-end;
-}
-.modalCart section{
+    text-align: cen;
+    background-color: rgb(250, 248, 248);
+    top: 0;
+    color: #0D554A;
+    right: 0;
     height: 100%;
     width: 440px;
-    background-color: #FFFFFF;
-    right: 0;
-   
+    box-shadow: none;
 
 }
+
+.modalCart-hidden span {
+    position: absolute;
+    display: flex;
+    left: 7%;
+    top: 28px;
+    width: 146px;
+    height: 56px;
+    font-family: 'Cormorant Garamound';
+    font-weight: 600;
+    font-size: 32px;
+    text-transform: capitalize;
+}
+
+.modalCart-hidden button {
+    font-size: 40px;
+    right: 30px;
+    top: 30px;
+}
+
+.modalCart-hidden {
+    top: 0;
+    left: 0;
+    background-color: #0f0f0fa9;
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+button {
+    cursor: pointer;
+}
+
+
 
 table {
     width: 100%;
 }
 
-th, td {
+th,
+td {
     color: fuchsia;
 }
 
@@ -279,7 +348,7 @@ th, td {
     border: 1px solid #0D554A;
     color: #0D554A;
     padding: 0.75rem 3.1875rem;
-    font-size: 1.1rem; 
+    font-size: 1.1rem;
 }
 
 .feature-img {
@@ -288,7 +357,7 @@ th, td {
 
 .feature-img img {
     border-radius: 8px;
-   margin-right: 20px;
+    margin-right: 20px;
 }
 
 .products-txt1 h2 {
@@ -320,7 +389,6 @@ th, td {
     margin-top: -90px;
     font-size: 28px;
     color: #FFFFFF;
-    
 }
 
 .products-txt h3 {
@@ -354,7 +422,6 @@ th, td {
     margin-top: -90px;
     font-size: 28px;
     color: #FFFFFF;
-    
 }
 
 .products-txt2 h3 {
@@ -375,13 +442,13 @@ th, td {
     border: 1px solid #0D554A;
     color: #0D554A;
     padding: 0.75rem 4.1875rem;
-    font-size: 1.1rem; 
+    font-size: 1.1rem;
 }
 
 .jewerly-container {
-   height: 554px;
-   background-color: #FAFAFB;
-   ;
+    height: 554px;
+    background-color: #FAFAFB;
+    ;
 }
 
 .jewerly {
@@ -421,7 +488,7 @@ th, td {
     border: 1px solid #0D554A;
     color: #0D554A;
     padding: 0.75rem 3.1875rem;
-    font-size: 1.1rem; 
+    font-size: 1.1rem;
 }
 
 .jewerly-img {
@@ -430,7 +497,7 @@ th, td {
 
 .jewerly-img img {
     border-radius: 8px;
-   margin-right: 20px;
+    margin-right: 20px;
 }
 
 .our-story {
@@ -444,7 +511,6 @@ th, td {
 .our-container {
     justify-content: center;
     text-align: center;
-    
 }
 
 .our-txt {
@@ -504,12 +570,11 @@ th, td {
 
 .footer1 .txt-img {
     position: absolute;
-    z-index: 1;
     color: #FFF;
     font-weight: 100;
     font-size: 16px;
     margin-top: -60px;
-    margin-left: 460px;
+    margin-left: 28%;
     margin-top: -120px;
     font-size: 1rem;
     line-height: 1.625rem;
@@ -521,7 +586,7 @@ th, td {
     font-weight: 100;
     font-size: 16px;
     margin-top: -60px;
-    margin-left: 460px;
+    margin-left: 28%;
     margin-top: 80px;
 }
 
@@ -550,7 +615,7 @@ th, td {
     font-weight: 400;
 }
 
-.footer{
+.footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -564,8 +629,8 @@ th, td {
 
 .logo-footer a {
     display: flex;
-   margin-left: -51.5rem;
-   margin-top: -50px;
+    margin-left: -51.5rem;
+    margin-top: -50px;
 }
 
 .link1 {
@@ -659,7 +724,7 @@ th, td {
 
 .email-bar input {
     width: 269px;
-    height: 35px; 
+    height: 35px;
     padding: 7px 132px 6px 12px;
     border-radius: 18px 0px 0px 18px;
     border: 1px solid #FFFFFF;
@@ -667,9 +732,9 @@ th, td {
 }
 
 .email-bar button {
-    padding: 10px; 
+    padding: 10px;
     border: none;
-    border-radius: px; 
+    border-radius: px;
     background-color: #F2C66D;
     color: #fff;
     cursor: pointer;

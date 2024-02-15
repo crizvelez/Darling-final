@@ -116,21 +116,96 @@
     display: none;
 }
 
+.button-car{
+    position: relative;
+    left: -18%;
+    width: 300px;
+    height: 44px;
+    color: #FFF;
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+border-radius: 22px;
+background: #0D554A;
+}
+
+.button-car{
+    
+    position: relative;
+    margin-top: 170%;
+}
+
 .submenu #carrito {
     display: none;
 }
 
-.submenu:hover #carrito {
-    display: block;
+.submenu img {
+    cursor: pointer;
+  }
+  
+#closeModal {
+    background-color: transparent;
+    display: flex;
     position: absolute;
-    right: 0;
-    backdrop-filter: blur(10px);
-    top: 100%;
-    z-index: 1;
-    background-color: aquamarine;
-    padding: 20px;
-    min-height: 400px;
+    box-shadow: none;
+    border: none;
+  outline: none;
+  background: none;
 }
+
+  .modalCart-hidden section {
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    text-align: cen;
+    background-color: rgb(250, 248, 248);
+    top: 0;
+    color: #0D554A;
+    right: 0;
+    height: 100%;
+    width: 440px;
+    box-shadow: none;
+    
+  }
+
+  .modalCart-hidden span {
+    position: absolute;
+    display: flex;
+    left: 7%;
+    top: 28px;
+    width: 146px;
+    height: 56px;
+    font-family: 'Cormorant Garamound';
+    font-weight: 600;
+    font-size: 32px;
+    text-transform: capitalize;
+  }
+
+  .modalCart-hidden button  {
+    font-size: 40px;
+    right: 30px;
+    top: 30px;
+  }
+
+  .modalCart-hidden {
+    top: 0;
+    left: 0;
+    background-color: #0f0f0fa9;
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+  
+button {
+    cursor: pointer;
+  } 
+
+
 
 /*------------*/
 .footer {
@@ -440,10 +515,11 @@
         outline: none; 
         transition: border-color 0.3s; 
         font-family: Manrope;
-         
-
      }
 
+     .prime a{
+        color: #FFFFFF;
+     }
      .order-img{
         margin-top: 80px;
         

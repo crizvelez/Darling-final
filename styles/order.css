@@ -76,32 +76,28 @@
 .navbar .active:hover {
     border-bottom: 4px solid var(--second-color);
     border-radius: 0.13rem;
-    height: 40px;
+    /* box-shadow: 2px 11px 0px -6px rgba(242, 198, 109, 1); */
 }
+
 .navbar .active1:hover {
     border-bottom: 4px solid var(--second-color);
     border-radius: 0.13rem;
-    height: 40px;
 }
 
 .navbar .active2:hover {
     border-bottom: 4px solid var(--second-color);
     border-radius: 0.13rem;
-    height: 40px;
 }
-
 .navbar .active3:hover {
-   height: 40px;
     border-bottom: 4px solid var(--second-color);
-    border-radius: 0.13px;
-}
+    border-radius: 0.13rem;
    
 
+}
 
 .navbar .active4:hover {
     border-bottom: 4px solid var(--second-color);
     border-radius: 0.13rem;
-    height: 40px;
 }
 
 
@@ -116,21 +112,96 @@
     display: none;
 }
 
-.submenu #carrito {
-    display: none;
+
+li.submenu #img-carrito {
+    cursor: pointer; 
+    ;
+  }
+
+  .button-car{
+    position: relative;
+    left: -18%;
+    width: 300px;
+    height: 44px;
+    color: #FFF;
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+border-radius: 22px;
+background: #0D554A;
 }
 
-.submenu:hover #carrito {
-    display: block;
-    position: absolute;
-    right: 0;
-    backdrop-filter: blur(10px);
-    top: 100%;
-    z-index: 1;
-    background-color: aquamarine;
-    padding: 20px;
-    min-height: 400px;
+.button-car{
+    
+    position: relative;
+    margin-top: 170%;
 }
+  
+  
+#closeModal {
+    background-color: transparent;
+    display: flex;
+    position: absolute;
+    box-shadow: none;
+    border: none;
+  outline: none;
+  background: none;
+}
+
+  .modalCart-hidden section {
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    text-align: cen;
+    background-color: rgb(250, 248, 248);
+    top: 0;
+    color: #0D554A;
+    right: 0;
+    height: 100%;
+    width: 440px;
+    box-shadow: none;
+   
+  }
+
+  .modalCart-hidden span {
+    position: absolute;
+    display: flex;
+    left: 7%;
+    top: 28px;
+    width: 146px;
+    height: 56px;
+    font-family: 'Cormorant Garamound';
+    font-weight: 600;
+    font-size: 32px;
+    text-transform: capitalize;
+  }
+
+  .modalCart-hidden button  {
+    font-size: 40px;
+    right: 30px;
+    top: 30px;
+  }
+
+  .modalCart-hidden {
+    top: 0;
+    left: 0;
+    background-color: #0f0f0fa9;
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+  
+button {
+    cursor: pointer;
+  } 
+
+
+
 
 /*------------------------*/
 
@@ -291,37 +362,46 @@
 .feature-container {
     margin-top: 20px;
     display: flex;
+    position: relative;
+    top: 700px;
     justify-content: center;
     align-items: center;
     height: 80vh;
-    margin-left: 4.580rem;
+    margin-left: 5%;
 }
+
 
 .feature-txt {
     font-family: "Cormorant Garamond";
-    left: 370px;
+    left: 5%;
     position: absolute;
     color: #0D554A;
-    margin-right: 69rem;
-    margin-top:690px;
+    margin-left: -12%;
+    margin-top:-500px;
     font-size: 26px;
 }
 
-.feature-img {
+.feature-txt {
+    left: 5%;
+}
+
+.feature-img  {
     padding-left: 20px;
-    margin-right: 10px;
-    
+    margin-right: 10px; 
     
 }
 
+
 .feature-img1 {
-   
-   margin-top: 1150px;
+  
+   width: 276px;
+   height: 320px;
     border-radius: 8px 8px 0 0;
 }
 
-.feature-img2 {
-    margin-top: 1150px;
+.feature-img .feature-img2 {
+    
+   
     border-radius: 8px 0 0 0;
     }
 /*-------------------------------------*/
@@ -330,8 +410,8 @@
     height: 583px;
     margin: 200px auto; 
     padding: 20px;
-    margin-top: -698px;
-    margin-left: 1340px;
+    margin-top: -680px;
+    margin-left: 68%;
     background-color: #FFFFFF;
     border: 1px solid #ccc; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -340,12 +420,12 @@
 
  /*----------------------*/
  .sona-productos{
-    width: 800px; 
-    height: 498px;
+    width: 752.02px; 
+    height: 418px;
     margin: 200px auto; 
     padding: 20px;
-    margin-top: -745px;
-    margin-left: 510px;
+    margin-top: -450px;
+    margin-left: 3%;
     background-color: #FFFFFF;
     border: 1px solid #ccc; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -523,37 +603,96 @@ font-weight: 700;
 line-height: 36px; 
  }
 
- .pago-logo1{
-    color: #379AE6;
-    font-family: Manrope;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px; 
+ .full-name{
+    display: flex;
+    position: relative;
  }
 
- .tarjeta-bard{
-    width: 300px;
-height: 60px;
+ .phone {
+    display: flex;
+    position: relative;
+    left: 60%;
+    top: -39px;
  }
+
+ .phone-num{
+    display: flex;
+    position: relative;
+    left: 60%;
+    top: -39px;
+    width: 120px;
+ }
+
+ input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.adress{
+    display: flex;
+    position: relative;
+    top: -30px;
+}
+
+.Address {
+    display: flex;
+    position: relative;
+    top: -30px;
+    width: 303px;
+}
+
+.correo{
+    display: flex;
+    position: relative;
+    top: -20px;
+}
+
+.Corre-o{
+    display: flex;
+    position: relative;
+    width: 303px;
+    top: -20px;
+}
+
+.n-card{
+    display: flex;
+    position: relative;
+    top: -10px;
+}
+
+.No-card{
+    display: flex;
+    position: relative;
+    top: -10px;
+    width: 145px;
+}
+
+.nU-card{
+    display: flex;
+    position: relative;
+    left: 51%;
+    top: -47px;
+}
+
+.Nu-card{
+    display: flex;
+    position: relative;
+    width: 147px;
+}
  
  .master-icon{
-    position: relative;
-    top: -72px;
+   display: flex;
+   position: relative;
+   top: -67px;
+   left: 91.6%;
  }
 
- .clave-master{
-    position: relative;
-    top: 40px;
-    right: 20px;
-color: #0D554A;
-text-align: right;
-font-family: Manrope;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: 18px; /* 163.636% */
+ .master-icon{
+   width: 20px;
+   height: 20px;
  }
+
 
  .Voucher{
     position: relative;
@@ -601,77 +740,16 @@ line-height: 20px; /* 166.667% */
 
  }
 
- .sumy{
-color: #171A1F;
-font-family: "Cormorant Garamond";
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-line-height: 28px; /* 155.556% */
- }
-
- .subto{
+ .Subto{
     position: relative;
-    top:20px;
-color: #171A1F;
-font-family: Manrope;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: 20px; /* 166.667% */
+    top: 50px;
  }
 
- .subto1{
-    position: relative;
-    top:30px;
-color: #171A1F;
-font-family: Manrope;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: 20px; /* 166.667% */
- }
 
- .subto2{
-    position: relative;
-    top:40px;
-color: #171A1F;
-font-family: Manrope;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: 20px; /* 166.667% */
- }
-
- .total1{
-    position: relative;
-    top: -40px;
-    color: #171A1F;
-
-text-align: right;
-font-family: Manrope;
-font-size: 14px;
-font-style: normal;
-font-weight: 700;
-line-height: 22px; /* 157.143% */
- }
-
- .total2{
-    position: relative;
-    top: -35px;
-    color: #171A1F;
-
-text-align: right;
-font-family: Manrope;
-font-size: 14px;
-font-style: normal;
-font-weight: 700;
-line-height: 22px; /* 157.143% */
- }
 
  .total3{
     position: relative;
-    top: -25px;
+    top: 30px;
     color: #171A1F;
 
 text-align: right;
@@ -683,28 +761,27 @@ line-height: 22px; /* 157.143% */
  }
 
  .linea {
+    display: flex;
+    position: relative;
     width: 100%;
     height: 1px;
     background-color: #DEE1E6; 
     margin: -5px 10; 
+    top: 50px;
   }
 
   .final{
+    display: flex;
     position: relative;
-    top: 20px;
-    color: #171A1F;
-    font-family: Manrope;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px; /* 166.667% */
+    top: 110px;
+   
   }
+ 
 
 .final-2{
+   
     position: relative;
-    top: -5px;
-    color: #E8502E;
-
+    top: 87px;
 text-align: right;
 font-family: Manrope;
 font-size: 18px;
@@ -716,7 +793,8 @@ line-height: 28px; /* 155.556% */
 
 .final-button{
     position: relative;
-    top: 10px;
+    top: 100px;
+    left: 3px;
     width: 300px;
     height: 44px;
     color: #FFF;
@@ -727,4 +805,8 @@ font-weight: 400;
 line-height: 26px; /* 162.5% */
 border-radius: 22px;
 background: #0D554A;
+}
+
+.final-button a{
+    color: #DEE1E6;
 }
